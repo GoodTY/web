@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
     <style>
+      body {
+        margin: 0;
+      }
       .nav {
         height: 70px;
         border-bottom: 1px solid black;
@@ -17,6 +19,9 @@
       .nav-item {
         margin-left: 10px;
       }
+      .company-name {
+        margin-left: 20px;
+      }
       .title{
         font-size: 3.5rem;
         font-weight: 300;
@@ -29,9 +34,56 @@
         text-align: center;
       }
       .main{
-        width: 700px;
+        width: 1000px;
         margin: 0 auto;
         margin-top: 60px;
+      }
+      .prices {
+        display : flex;
+      }
+      .price-item {
+        width: 300px;
+        height: 350px;
+        border: 1px solid black;
+        margin: 20px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .price-item-title {
+        font-size: 1.5rem;
+        background: rgba(0,0,0,.03);
+        text-align: center;
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 1px solid black;
+      }
+      .price-item-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+      .price-item-detail {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .price-item-button {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 30px;
+      }
+      .price-item-button-active {
+        background-color: #007bff;
+        color: white;
+      }
+      .price-item-month {
+        font-size: 16px;
+        color: gray;
       }
     </style>
   </head>
@@ -54,18 +106,64 @@
       <div class="subtitle">
         Quickly build an effective pricing table for your potential customers with this Bootstrap example, It's built with default Bootstrap components and utilities with little customization.
       </div>
+      <div class="prices">
+        <div class="price-item">
+          <div class="price-item-title">
+            Free
+          </div>
+          <div class="price-item-price">
+            $0 / mo
+          </div>
+          <div class="price-item-detail">
+            10 users included<br>
+            2 GB of storage<br>
+            Email support<br>
+            Help center access<br>
+          </div>
+          <button class="price-item-button">
+            Click me
+          </button>
+        </div>
+
+        <div class="price-item">
+          <div class="price-item-title">
+            Pro
+          </div>
+          <div class="price-item-price">
+            $15 / mo
+          </div>
+          <div class="price-item-detail">
+            20 users included<br>
+            10 GB of storage<br>
+            Priority email support<br>
+            Help center access<br>
+          </div>
+          <button class="price-item-button price-item-button-active">
+            Click me
+          </button>
+        </div>
+
+        <div class="price-item">
+          <div class="price-item-title">
+            Enterprise
+          </div>
+          <div class="price-item-price">
+            $29 / mo
+          </div>
+          <div class="price-item-detail">
+            30 users included<br>
+            15 GB of storage<br>
+            Phone and email support<br>
+            Help center access<br>
+          </div>
+          <button class="price-item-button price-item-button-active">
+            Click me
+          </button>
+        </div>
+
+      </div>
     </div>
-    <div class="prices">
-      <div class="price-item">
-        프라이스1
-      </div>
-      <div class="price-item">
-        프라이스2
-      </div>
-      <div class="price-item">
-        프라이스3
-      </div>
-    </div>
+
       <script src="scripte.js"></script>
   </body>
 </html>
