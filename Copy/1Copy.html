@@ -33,9 +33,13 @@
         margin-right: 20px;
 
       }
+      a:visited{
+        color:black;
+      }
       .nav-item {
         margin-left: 25px;
         margin-top: 9px;
+        t
       }
       .company-name {
         margin-left: 20px;
@@ -62,7 +66,7 @@
         display : flex;
         width: 1000px;
         margin: 0 auto;
-        txet-align: center;
+        text-align: center;
         border-bottom: 1px solid rgba(0,0,0,.125);
         padding:20px;
         padding-bottom:40px;
@@ -110,32 +114,39 @@
         font-size: 16px;
         color: gray;
       }
-      a {
-        color:black;
-        text-transform: none;
-      }
-      .bottom-links {
+      .bottom {
         display:flex;
-        padding:30px;
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+      .bottom-link {
         color:red;
       }
       .Features {
         padding:20px;
-        margin-left:50px;
       }
       .Resources {
         padding:20px;
-        margin-left:50px;
+        margin-left:70px;
       }
       .About {
         padding:20px;
-        margin-left:50px;
+        margin-left:70px;
       }
       .bottom-title {
         font-weight: bold;
         margin-bottom:10px;
         font-size: 1.1rem;
         color:black;
+      }
+      .copyright {
+        padding:20px;
+        margin-right:100px;
+      }
+      copyright.relative{
+        left: 300px;
+        top:50px;
       }
     </style>
   </head>
@@ -216,32 +227,33 @@
       </div>
     </div>
     <div class="bottom">
-      <div class="bottom-links">
-        <div class="Features">
-          <div class="bottom-title">Features</div>
-          <div class="bottom-item"><a href="">Cool Stuff</a></div>
-          <div class="bottom-item"><a href="">Random feature</a></div>
-          <div class="bottom-item"><a href="">Team feature</a></div>
-          <div class="bottom-item"><a href="">Stuff for developers</a></div>
-          <div class="bottom-item"><a href="">Another one</a></div>
-          <div class="bottom-item"><a href="">Last time</a></div>
-        </div>
-        <div class="Resources">
-          <div class="bottom-title">Resources</div>
-          <div class="bottom-item"><a href="">Resource</a></div>
-          <div class="bottom-item"><a href="">Resource name</a></div>
-          <div class="bottom-item"><a href="">Another resource</a></div>
-          <div class="bottom-item"><a href="">Final resource</a></div>
-        </div>
-        <div class="About">
-          <div class="bottom-title">About</div>
-          <div class="bottom-item"><a href="">Team</a></div>
-          <div class="bottom-item"><a href="">Locations</a></div>
-          <div class="bottom-item"><a href="">Privacy</a></div>
-          <div class="bottom-item"><a href="">Terms</a></div>
-        </div>
+      <div class="copyright">
+      	<img src="C:\Users\taek3\OneDrive\사진\배경화면.jfif" alt="My Image" width="24"  height="19"><br>
+        © 2017-2020
+      </div>
+      <div class="Features">
+        <div class="bottom-title">Features</div>
+        <div class="bottom-link"><a href="">Cool Stuff</a></div>
+        <div class="bottom-link"><a href="">Random feature</a></div>
+        <div class="bottom-link"><a href="">Team feature</a></div>
+        <div class="bottom-link"><a href="">Stuff for developers</a></div>
+        <div class="bottom-link"><a href="">Another one</a></div>
+        <div class="bottom-link"><a href="">Last time</a></div>
+      </div>
+      <div class="Resources">
+        <div class="bottom-title">Resources</div>
+        <div class="bottom-link"><a href="">Resource</a></div>
+        <div class="bottom-link"><a href="">Resource name</a></div>
+        <div class="bottom-link"><a href="">Another resource</a></div>
+        <div class="bottom-link"><a href="">Final resource</a></div>
+      </div>
+      <div class="About">
+        <div class="bottom-title">About</div>
+        <div class="bottom-link"><a href="">Team</a></div>
+        <div class="bottom-link"><a href="">Locations</a></div>
+        <div class="bottom-link"><a href="">Privacy</a></div>
+        <div class="bottom-link"><a href="">Terms</a></div>
       </div>
     </div>
-  </div>
   </body>
 </html>
