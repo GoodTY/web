@@ -8,7 +8,7 @@
       }
       .nav {
         height: 70px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(0,0,0,.125);
         display: flex;
         align-items: center;
       }
@@ -19,15 +19,18 @@
         height-align:center;
       }
       .nav-item-button {
-        padding: .5rem 1rem;
+        padding: .3rem 1rem;
         line-height: 1.5;
+        font-size: 1rem;
         border-radius: .3rem;
-        color: #007bff;
+        color: #0d6efd;
         background-color: transparent;
         background-image: none;
-        border-color: #007bff;
-        margin-left: 25px;
-        margin-right: auto;
+        border-color: #0d6efd;
+        border-width: thin;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-right: 20px;
 
       }
       .nav-item {
@@ -36,9 +39,10 @@
       }
       .company-name {
         margin-left: 20px;
-        font-size: 18px;
+        font-size: 20px;
       }
       .title{
+        padding:10px;
         font-size: 3.5rem;
         font-weight: 300;
         font-height: 1.2;
@@ -58,8 +62,10 @@
         display : flex;
         width: 1000px;
         margin: 0 auto;
-        margin-top 60px;
         txet-align: center;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        padding:20px;
+        padding-bottom:40px;
       }
       .price-item {
         width: 300px;
@@ -104,6 +110,33 @@
         font-size: 16px;
         color: gray;
       }
+      a {
+        color:black;
+        text-transform: none;
+      }
+      .bottom-links {
+        display:flex;
+        padding:30px;
+        color:red;
+      }
+      .Features {
+        padding:20px;
+        margin-left:50px;
+      }
+      .Resources {
+        padding:20px;
+        margin-left:50px;
+      }
+      .About {
+        padding:20px;
+        margin-left:50px;
+      }
+      .bottom-title {
+        font-weight: bold;
+        margin-bottom:10px;
+        font-size: 1.1rem;
+        color:black;
+      }
     </style>
   </head>
   <body>
@@ -112,10 +145,10 @@
         Company name
       </div>
       <div class="nav-right-items">
-        <div class="nav-item">Features</div>
-        <div class="nav-item">Enterprise</div>
-        <div class="nav-item">Support</div>
-        <div class="nav-item">Pricing</div>
+        <div class="nav-item"><a href="">Features</a></div>
+        <div class="nav-item"><a href="">Enterprise</a></div>
+        <div class="nav-item"><a href="">Support</a></div>
+        <div class="nav-item"><a href="">Pricing</a></div>
         <button class="nav-item-button">Sign up</button>
       </div>
     </div>
@@ -182,7 +215,33 @@
         </button>
       </div>
     </div>
-
-      <script src="scripte.js"></script>
+    <div class="bottom">
+      <div class="bottom-links">
+        <div class="Features">
+          <div class="bottom-title">Features</div>
+          <div class="bottom-item"><a href="">Cool Stuff</a></div>
+          <div class="bottom-item"><a href="">Random feature</a></div>
+          <div class="bottom-item"><a href="">Team feature</a></div>
+          <div class="bottom-item"><a href="">Stuff for developers</a></div>
+          <div class="bottom-item"><a href="">Another one</a></div>
+          <div class="bottom-item"><a href="">Last time</a></div>
+        </div>
+        <div class="Resources">
+          <div class="bottom-title">Resources</div>
+          <div class="bottom-item"><a href="">Resource</a></div>
+          <div class="bottom-item"><a href="">Resource name</a></div>
+          <div class="bottom-item"><a href="">Another resource</a></div>
+          <div class="bottom-item"><a href="">Final resource</a></div>
+        </div>
+        <div class="About">
+          <div class="bottom-title">About</div>
+          <div class="bottom-item"><a href="">Team</a></div>
+          <div class="bottom-item"><a href="">Locations</a></div>
+          <div class="bottom-item"><a href="">Privacy</a></div>
+          <div class="bottom-item"><a href="">Terms</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
