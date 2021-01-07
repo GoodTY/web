@@ -102,6 +102,10 @@ div.bottom-link{
   border-color: #007bff;
   margin-top: 30px;
 }
+.price-item-button:hover {
+  background-color: #0B5ED7;
+  color:white;
+}
 .price-item-button-active {
   background-color: #007bff;
   color: white;
