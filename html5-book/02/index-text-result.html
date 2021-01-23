@@ -4,6 +4,21 @@
 	<title>온라인 프로필</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+     <style>
+         table {
+             width:70%;
+             border:1px solid #222;
+             border-collapse: collapse;
+         }
+         thead {
+             background:#eee;
+         }
+         th,td {
+             boder: 1px solid #ccc;
+             padding:5px;
+             font-size:0.8em;
+         }
+     </style>
 </head>
 
 <body>
@@ -57,7 +72,31 @@
             <!-- 학력 -->
             <section>
                 <h2 class="subtitle">Education</h2>
-
+                <table>
+                    <caption>학력 사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>한양대학교 erica 캠퍼스</td>
+                            <td>소프트웨어학부</td>
+                            <td>2019.3 ~ </td>
+                            <td>재학</td>
+                        </tr>
+                        <tr>
+                            <td>양정고등학교</td>
+                            <td> - </td>
+                            <td>2015.3 ~ 2018.2</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>        
     </div>
